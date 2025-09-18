@@ -1,0 +1,49 @@
+.select-container {
+  position: relative;
+
+  @include mobile {
+    margin-bottom: rem(10px);
+  }
+
+  &:after {
+    content:" ";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.246' height='18.152' viewBox='0 0 20.246 18.152'%3E%3Cpath id='Polygone_4' data-name='Polygone 4' d='M10.123,0,20.246,18.152H0Z' transform='translate(20.246 18.152) rotate(180)'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    position: absolute;
+    width: rem(12px);
+    height: rem(11px);
+    right: rem(23px);
+    top: rem(15px);
+    display: block;
+    pointer-events: none;
+
+    @include mobile {
+      margin-bottom: rem(10px);
+      width: rem(9px);
+      height: rem(8px);
+      top: rem(12px);
+    }
+  }
+  
+  select {
+    @include responsivePixelHeight(30, 40, 40, 52); 
+    @extend %typo-base;
+
+    -webkit-appearance: none;
+    text-decoration: none;
+    border: solid rem(1px) black;
+    display: inline-block;
+    border-radius: 30px;
+    color:black;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 400;
+    padding-left: rem(10px);
+
+    @include bigTablet {
+      border: solid rem(2px) black;
+    }
+  }
+} 

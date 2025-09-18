@@ -1,0 +1,104 @@
+@use '../commons/vars' as vars;
+
+.block-call-master-phd {
+    display: flex;
+    flex-direction: column;
+
+    .block {
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        margin: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        gap: 50px;
+        position: relative;
+        max-width: vars.$maxWidth;
+
+        @media (max-width: 780px) {
+            flex-direction: column;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .surtitre-colore {
+            font-size: 110px;
+            font-weight: 700;
+            line-height: 0.7;
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            top: -70px;
+            margin-right: 100px;
+            margin: auto;
+            max-width: vars.$maxWidth;
+
+            @media (max-width: 1440px) {
+                max-width: vars.$maxWidth1440;
+                top: -55px;
+                font-size: 80px;
+            }
+
+            @media (max-width: 640px) {
+                margin-right: 50px;
+                font-size: 50px;
+                top: -55px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            max-width: vars.$maxWidth1440;
+        }
+
+        .bloc {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (max-width: 780px) {
+                width: 100%;
+            }
+
+            .annee {
+                background-color: vars.$greenClear;
+                width: fit-content;
+                padding: 5px;
+                border-radius: 5px;
+                margin-bottom: 25px;
+
+                @media (max-width: 1440px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .titre {
+                margin-bottom: 50px;
+
+                @media (max-width: 1440px) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .contenu {
+                margin-bottom: 50px;
+
+                @media (max-width: 1440px) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .boutons {
+                display: flex;
+                flex-wrap: wrap;
+
+                .btn {
+                    margin-right: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    }
+}

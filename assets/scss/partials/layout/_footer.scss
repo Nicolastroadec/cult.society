@@ -1,0 +1,24 @@
+.footer { 
+
+  .link {
+    display: block;
+    width: 100%;
+  }
+
+  .socials {
+    align-items: end;
+    line-height: 0;
+  }
+
+  .ads {
+    @include mobile {
+      display: flex;
+
+      .column:nth-child(2),
+      .column:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,180 @@
+/**
+ * TYPOGRAPHY
+ *
+ * Common to ALL LANGUAGES
+ *
+ * /!\ This file shouldn't be modified, unless the designer changed something in its guidelines
+ *
+ * If styles differ for CN lang, then cut and paste the target style in _typography-non-cn.scss and duplicate it in _typography-cn.scss to style it differently
+*/
+
+@mixin responsiveProperty($propertyName, $mobileValue, $tabletValue, $bigTabletValue, $desktopValue) {
+
+    @if $mobileValue {
+        #{$propertyName}: $mobileValue;
+    }
+
+    @if $tabletValue {
+        @include tablet {
+            #{$propertyName}: $tabletValue;
+        }
+    }
+
+    @if $bigTabletValue {
+        @include bigTablet {
+            #{$propertyName}: $bigTabletValue;
+        }
+    }
+
+    @if $desktopValue {
+        @include minDesktop {
+            #{$propertyName}: $desktopValue;
+        }
+    }
+}
+
+@mixin responsivePixelLineHeight($mobileValue, $tabletValue, $bigTabletValue, $desktopValue) {
+    @if $mobileValue {
+        $mobileValue: rem(($mobileValue * 1px));
+    }
+    @if $tabletValue {
+        $tabletValue: rem(($tabletValue * 1px));
+    }
+    @if $bigTabletValue {
+        $bigTabletValue: rem(($bigTabletValue * 1px));
+    }
+    @if $desktopValue {
+        $desktopValue: rem(($desktopValue * 1px));
+    }
+
+    @include responsiveProperty('line-height', $mobileValue, $tabletValue, $bigTabletValue, $desktopValue);
+}
+
+@mixin responsivePixelHeight($mobileValue, $tabletValue, $bigTabletValue, $desktopValue) {
+    @if $mobileValue {
+        $mobileValue: rem(($mobileValue * 1px));
+    }
+    @if $tabletValue {
+        $tabletValue: rem(($tabletValue * 1px));
+    }
+    @if $bigTabletValue {
+        $bigTabletValue: rem(($bigTabletValue * 1px));
+    }
+    @if $desktopValue {
+        $desktopValue: rem(($desktopValue * 1px));
+    }
+
+    @include responsiveProperty('height', $mobileValue, $tabletValue, $bigTabletValue, $desktopValue);
+}
+
+@mixin responsivePixelFontSize($mobileValue, $tabletValue, $bigTabletValue, $desktopValue) {
+
+    @if $mobileValue {
+        $mobileValue: rem(($mobileValue * 1px));
+    }
+    @if $tabletValue {
+        $tabletValue: rem(($tabletValue * 1px));
+    }
+    @if $bigTabletValue {
+        $bigTabletValue: rem(($bigTabletValue * 1px));
+    }
+    @if $desktopValue {
+        $desktopValue: rem(($desktopValue * 1px));
+    }
+
+    @include responsiveProperty('font-size', $mobileValue, $tabletValue, $bigTabletValue, $desktopValue);
+
+    sup,
+    sub {
+        @if $mobileValue {
+            $mobileValue: calc(#{$mobileValue} * 0.75);
+        }
+        @if $tabletValue {
+            $tabletValue: calc(#{$tabletValue} * 0.75);
+        }
+        @if $bigTabletValue {
+            $bigTabletValue: calc(#{$bigTabletValue} * 0.75);
+        }
+        @if $desktopValue {
+            $desktopValue: calc(#{$desktopValue} * 0.75);
+        }
+
+        @include responsiveProperty('font-size', $mobileValue, $tabletValue, $bigTabletValue, $desktopValue);
+        @include responsiveProperty('line-height', $mobileValue, $tabletValue, $bigTabletValue, $desktopValue);
+    }
+
+    sup {
+        vertical-align: text-top;
+    }
+}
+
+/**
+ * Titles
+ */
+%typo-h2, .typo-h2 {
+  @extend %fontTelegrafRegular;
+  @include responsivePixelLineHeight(27, 31, 31, 52); 
+  @include responsivePixelFontSize(24, 28, 28, 40); 
+
+  color: $black;
+  text-decoration: none;
+
+  &.active {
+    text-decoration: underline;
+  }
+
+  &.link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+%typo-base, .typo-base {
+    @extend %fontTelegrafRegular;
+    @include responsivePixelFontSize(18, 20, 20, 29);
+    @include responsivePixelLineHeight(21, 23, 23, 33);
+    color: $black;
+    text-decoration: none;
+
+    &.active {
+      text-decoration: underline;
+    }
+
+    &.link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      color:$black;
+    }
+}
+
+%typo-small, .typo-small {
+    @extend %fontTelegrafRegular;
+    @include responsivePixelFontSize(15, 15, 15, 29);
+    @include responsivePixelLineHeight(21, 21, 21, 33);
+    color: $black;
+    text-decoration: none;
+
+    &.active {
+      text-decoration: underline;
+    }
+
+    &.link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+}
+
+em, i {
+  font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
+

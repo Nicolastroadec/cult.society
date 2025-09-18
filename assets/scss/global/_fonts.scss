@@ -1,0 +1,17 @@
+$fontsRelativePath: '../../fonts/cult/' !default;
+
+@font-face {
+    font-family: 'PPTelegraf';
+    src: url("#{$fontsRelativePath}PPTelegraf-Regular.woff2") format("woff2"),
+        url("#{$fontsRelativePath}PPTelegraf-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-variation-settings: "wght" 400, "ital" 0;
+}
+%fontTelegrafRegular {
+    font-family: 'PPTelegraf', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: "wght" 400, "ital" 0;
+}

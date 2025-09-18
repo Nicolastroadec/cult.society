@@ -1,0 +1,82 @@
+@use '../commons/vars' as vars;
+
+.block-last-newsletter {
+    margin-bottom: 140px;
+    margin-top: 140px;
+
+
+
+    .block {
+        border-radius: 20px;
+        padding: 45px;
+        max-width: 600px;
+        margin: auto;
+        background-color: vars.$greenClear;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+
+        @media (max-width: 640px) {
+            max-width: 280px;
+            padding: 35px;
+        }
+
+        h3 {
+            margin-bottom: 40px;
+            font-size: 30px !important;
+
+            @media (max-width: 640px) {
+                font-size: 25px;
+                margin-bottom: 35px;
+            }
+
+        }
+
+        .see-last-newsletter {
+            margin-top: 32px;
+            z-index: 10;
+
+            .btn {
+                white-space: nowrap;
+            }
+
+
+        }
+
+        .svg-deco-newsletter-bottom-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+
+        .svg-newsletter-bottom-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+
+        .logo-cland-opacity-50 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 230px;
+            border-top-left-radius: 20px;
+            z-index: 0;
+
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+    }
+}

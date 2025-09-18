@@ -1,0 +1,36 @@
+@use './vars' as vars;
+
+.underline-green-vibrant {
+    position: relative; // Pour pouvoir positionner le ::after
+    z-index: 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px; // Un petit décalage vers le bas
+        width: 100%;
+        height: 20px;
+        background-color: vars.$greenVibrant;
+        z-index: -1; // Pour que la barre soit derrière le texte
+    }
+}
+
+
+
+.underline {
+    position: relative; // Pour pouvoir positionner le ::after
+    z-index: 0;
+    white-space: nowrap;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px; // Un petit décalage vers le bas
+        width: 100%;
+        height: 20px;
+        //  background-color: vars.$greenVibrant;
+        z-index: -1; // Pour que la barre soit derrière le texte
+    }
+}

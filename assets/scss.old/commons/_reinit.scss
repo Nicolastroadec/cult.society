@@ -1,0 +1,80 @@
+@use './vars' as vars;
+
+#right-sidebar {
+    display: none;
+}
+
+.site-content .content-area {
+    width: 100%;
+}
+
+.wp-original-block {
+    width: 100%;
+    margin: auto;
+    max-width: vars.$maxWidth;
+
+    @media (max-width: calc(vars.$maxWidth - 150px)) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    @media (max-width: 1440px) {
+        max-width: vars.$maxWidth1440;
+    }
+
+    @media (max-width: 980px) {}
+}
+
+.wp-block-acf {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+body {
+    background-color: vars.$beige;
+    margin-bottom: 0 !important;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+div {
+    color: vars.$colorTypo;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: vars.$colorTypo;
+}
+
+.wp-block-button__link {
+    &:visited {
+        color: white;
+    }
+}
+
+a:hover {
+    color: vars.$colorTypo;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+ul {
+    margin-left: 0;
+    padding-left: 20px;
+}

@@ -1,0 +1,100 @@
+@use './vars' as vars;
+
+.btn,
+.jobs-menu,
+.wp-block-button a {
+    //  padding: 0.8rem 1rem;
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+    text-decoration: none !important;
+
+    &:hover {
+        &::before {
+            top: -12px;
+            right: -12px;
+            transition: all 0.5s ease;
+        }
+
+        &::after {
+            bottom: -12px;
+            left: -12px;
+            transition: all 0.5s ease;
+        }
+
+        &::before,
+        &::after {
+            opacity: 1;
+        }
+    }
+
+
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100% auto; // ou "contain"
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    &::before {
+        top: -2.5px;
+        right: -3px;
+        width: 30px; // largeur à ajuster selon le bouton
+        height: auto;
+        aspect-ratio: 23 / 15; // bonus si ton préprocesseur le supporte
+        background-image: url('../../assets/svg/line-top-button-hover.svg');
+        transition: all 0.5s ease;
+    }
+
+    &::after {
+        bottom: -3px;
+        left: -3px;
+        width: 50px !important; // adapte selon ton bouton
+        height: auto !important;
+        aspect-ratio: 39 / 15;
+        background-image: url('../../assets/svg/line-bottom-button-hover.svg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        pointer-events: none;
+        transition: all 0.5s ease;
+        background-color: initial;
+
+    }
+
+}
+
+.btn-primary {
+    background-color: vars.$beige;
+    border-radius: 13px !important;
+    color: vars.$colorTypo;
+    border: 1px solid vars.$colorTypo;
+    padding: 0.8rem 1rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    width: fit-content !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-secondary,
+.wp-block-button__link,
+.wp-block-file__button {
+    background-color: vars.$green;
+    color: vars.$beige !important;
+    border-radius: 13px !important;
+    border: 1px solid black;
+    padding: 0.8rem 1rem;
+    width: fit-content !important;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    a {
+        color: vars.$beige !important;
+    }
+}

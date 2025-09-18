@@ -1,0 +1,71 @@
+.tag {
+
+  @include responsivePixelHeight(30, 40, 40, 52); 
+  @extend %typo-h2;
+   
+  text-decoration: none;
+  border: solid rem(1px) black;
+  display: inline-block;
+  border-radius: 30px;
+  color:black;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 400;
+
+  @include bigTablet {
+    border: solid rem(2px) black;
+  }
+
+  &:hover:not(.disabled),
+  &.current-menu-item {
+    background-color: black;
+    color:white;
+  }
+
+
+  &.revert {
+     background-color: black;
+     color:white;
+
+    &:hover:not(.disabled),
+    &.current-menu-item {
+      background-color: white;
+      color:black;
+    }
+  }
+}
+
+.tagContainer {
+  width: auto !important;
+  display: inline-block;
+
+  @include mobile {
+      margin-bottom: rem(10px);
+      padding-right: rem(0px);
+  }
+
+  &+.tagContainer {
+    padding-left: 0;
+
+    @include mobile {
+      padding-left: rem(10px);
+    }
+  }
+
+  .tag {
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+  }
+}
+.wysiwyg {
+  @include mobile {
+    .tag {
+       width: auto;
+      display: inline-block;
+      padding-left: rem(10px);
+      padding-right: rem(10px);
+    }
+  }
+}

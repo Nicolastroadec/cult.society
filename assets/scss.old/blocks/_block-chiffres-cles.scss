@@ -1,0 +1,86 @@
+@use '../commons/vars' as vars;
+
+.block-chiffres-cles {
+    position: relative;
+
+    .deco-droite-bas {
+        position: absolute;
+        bottom: -191px;
+        right: 0;
+        z-index: 0;
+        height: 318px;
+        width: auto;
+
+    }
+
+    .block {
+
+        margin: auto;
+
+        max-width: vars.$maxWidth;
+
+        @media (max-width: 1440px) {
+            max-width: vars.$maxWidth1440;
+        }
+
+        h2 {
+            position: relative;
+
+            .deco-titre {
+                width: 150px;
+                height: 1px;
+                background-color: black;
+                position: absolute;
+                left: -170px;
+                top: 50%;
+            }
+        }
+
+        .chiffres-cles {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+
+            @media (max-width: 640px) {
+                flex-direction: column;
+            }
+
+            .chiffre-cle {
+                width: calc(100% / 7);
+                z-index: 1;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: 640px) {
+                    display: flex;
+                    padding-left: 2rem;
+                }
+
+                img {
+                    height: fit-content;
+                    margin-bottom: 20px;
+                    max-height: 70px;
+                    max-width: 50px;
+                    width: auto;
+                    height: auto;
+                }
+
+                .data {
+                    .chiffre {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+
+                    .unites {
+                        font-size: 20px;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}

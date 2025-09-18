@@ -1,0 +1,191 @@
+@use './vars' as vars;
+
+
+.bg-jaune {
+    background-color: vars.$yellow !important;
+
+    .surtitre-colore {
+        color: vars.$yellow !important;
+    }
+}
+
+
+.surtitre-colore {
+    @media (max-width: 640px) {
+        margin-right: 50px;
+        font-size: 50px;
+        top: -55px;
+    }
+}
+
+
+
+.bg-vert {
+    background-color: vars.$green !important;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    p,
+    ul,
+    li,
+    a,
+    div {
+        color: vars.$beige;
+    }
+
+    .surtitre-colore {
+        color: vars.$green !important;
+    }
+
+    .deco-title {
+        background-color: vars.$beige !important;
+    }
+
+    .accordeon-element {
+        background-color: vars.$beige;
+
+        .accordeon-title {
+            height: 60px;
+
+            h3 {
+                color: vars.$fontBlack;
+                display: flex;
+                align-items: center;
+            }
+
+
+
+
+            .cross-accordeon {
+
+                path {
+                    fill: vars.$fontBlack;
+                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+
+                }
+            }
+
+        }
+    }
+}
+
+.bg-vert-clair {
+    background-color: vars.$greenClear !important;
+
+    .deco-bck {
+        .colored-path {
+            fill: vars.$greenClear !important;
+        }
+
+        .colored-stroke {
+            stroke: vars.$greenClear !important;
+        }
+    }
+
+    .surtitre-colore {
+        color: vars.$greenClear !important;
+    }
+
+    .accordeon-element {
+        background-color: vars.$beige;
+
+        .accordeon-title {
+            height: 60px;
+
+            h3 {
+                color: vars.$fontBlack;
+                display: flex;
+                align-items: center;
+            }
+
+
+            .cross-accordeon {
+
+                path {
+                    fill: vars.$fontBlack;
+                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+
+                }
+            }
+
+        }
+    }
+}
+
+.bg-bleu {
+    background-color: vars.$blue !important;
+
+    .deco-bck {
+        .colored-path {
+            fill: vars.$blue !important;
+        }
+
+        .colored-stroke {
+            stroke: vars.$blue !important;
+        }
+    }
+
+    .surtitre-colore {
+        color: vars.$blue !important;
+    }
+}
+
+.bg-rouge {
+    background-color: vars.$red !important;
+
+    .surtitre-colore {
+        color: vars.$red !important;
+    }
+}
+
+.bg-orange {
+    background-color: vars.$orangeClear !important;
+
+    .deco-bck {
+        .colored-path {
+            fill: vars.$orangeClear !important;
+        }
+
+        .colored-stroke {
+            stroke: vars.$orangeClear !important;
+        }
+    }
+
+    .surtitre-colore {
+        color: vars.$blue !important;
+    }
+
+    .surtitre-colore {
+        color: vars.$orange !important;
+    }
+}
+
+.bg-bleu-sombre {
+    background-color: vars.$darkBlue !important;
+
+    .surtitre-colore {
+        color: vars.$darkBlue !important;
+    }
+}
+
+.bg-beige {
+    background-color: vars.$beige !important;
+
+    .deco-bck {
+        .colored-path {
+            fill: vars.$beige !important;
+        }
+
+        .colored-stroke {
+            stroke: vars.$beige !important;
+        }
+    }
+
+    .surtitre-colore {
+        color: vars.$beige !important;
+    }
+}

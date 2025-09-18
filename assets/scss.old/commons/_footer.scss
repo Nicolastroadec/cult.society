@@ -1,0 +1,169 @@
+@use './vars' as vars;
+
+.site-footer {
+
+
+    a {
+        color: vars.$fontWhite;
+        margin-bottom: 10px;
+
+    }
+
+    .pre-footer {
+        background-color: vars.$lightBlue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 30px 0;
+
+        .logos-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: vars.$width;
+            gap: 100px;
+            margin: auto;
+            max-width: vars.$maxWidth;
+
+            @media (max-width: 1440px) {
+                max-width: vars.$maxWidth1440;
+            }
+
+            @media (max-width: 780px) {
+                flex-direction: column;
+            }
+
+            img {
+                height: 60px;
+                width: auto;
+            }
+        }
+
+    }
+
+    .footer-content {
+        background-color: vars.$green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+        position: relative;
+
+        .logo-footer-cland {
+            margin: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 100px;
+                width: auto;
+                margin: auto;
+
+            }
+        }
+
+        .menus-footer {
+            display: flex;
+            max-width: vars.$maxWidth;
+
+
+            width: vars.$width;
+            margin: auto;
+            gap: 150px;
+
+            @media (max-width: 1440px) {
+                max-width: vars.$maxWidth1440;
+            }
+
+            @media (max-width: 1280px) {
+                gap: 50px;
+            }
+
+            @media (max-width:780px) {
+                gap: 10px;
+                flex-wrap: wrap;
+
+            }
+
+            @media (max-width:540px) {
+                gap: 10px;
+                flex-wrap: wrap;
+
+            }
+
+            .col {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: 780px) {
+                    width: calc(50% - 10px);
+                }
+
+                @media (max-width:540px) {
+                    width: calc(100% - 10px);
+                }
+
+                h2 {
+                    color: vars.$fontWhite;
+                    margin-bottom: 25px;
+                    font-size: 20px !important;
+                }
+
+                .menu-footer {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        color: vars.$fontWhite;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .signature-container {
+            display: flex;
+            justify-content: flex-end;
+            width: vars.$width;
+            margin-right: 2rem;
+            padding-bottom: 24px;
+            padding-top: 24px;
+            margin: auto;
+
+            .signature {
+                color: vars.$fontWhite;
+                font-size: 14px;
+
+                a {
+                    color: white;
+                    font-size: 14px !important;
+                }
+            }
+
+        }
+
+        .scroll-to-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+    }
+
+}

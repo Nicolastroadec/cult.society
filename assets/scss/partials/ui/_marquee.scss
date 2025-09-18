@@ -1,0 +1,44 @@
+.marquee {
+  height: rem(23px);
+  overflow: hidden;
+  position: relative;
+
+  @include minDesktop {
+    height: rem(33px);
+  }
+}
+
+.marquee div {
+  display: block;
+  width: 1000%;
+  height: rem(23px);
+  line-height: 1;
+
+  @include minDesktop {
+    height: rem(33px);
+  }
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 20s linear infinite;
+}
+
+.marquee a, .marquee span {
+  display: inline-block;
+  width: auto;
+}
+
+.marquee span {
+  cursor: default;
+
+  &:hover {
+    text-decoration: none;
+    border:none;
+  }
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}

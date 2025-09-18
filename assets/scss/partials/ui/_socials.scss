@@ -1,0 +1,12 @@
+.socials {
+  display: flex;
+  justify-content: end;
+
+  a {
+    margin-left: rem(10px);
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+}

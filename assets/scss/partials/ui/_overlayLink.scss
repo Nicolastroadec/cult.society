@@ -1,0 +1,69 @@
+.overlay {
+
+  display: none !important;
+
+  .column:last-child{
+    border:none;
+  }
+
+  .menu-item {
+    &:hover {
+      background-color: black;
+      color:white;
+    }
+  }
+
+  .overlayLink {
+    display: block;
+    width: 100%;
+    padding-top: rem(10px);
+    padding-bottom: rem(10px);
+
+    &:hover {
+      color:white;
+      text-decoration: none;
+    }
+  }
+
+  .space {
+    height: rem(120px);
+    pointer-events: none;
+  }
+
+  &.active {
+    display: block !important;
+  }
+
+}
+.relative {
+  position: relative;
+}
+
+.js-content {
+  &.hidden {
+    display: none;
+  }
+}
+
+.is-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.js-toggleMenu {
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+}
+.js-toggleMenu.active {
+  background-color: black;
+  .close {
+    display: block;
+  }
+  .open {
+    display: none;
+  }
+}

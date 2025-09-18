@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0; 
+}
+
+body {
+  @extend %fontTelegrafRegular;
+  background: $white;
+  color: $black;
+  transition: padding-top .5s ease-out;
+  letter-spacing: -0.03em;
+}
+
+.hide-on-mobile {
+
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.hide-on-touch {
+
+  @include touch {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+
+  @include phablet {
+    display: none !important;
+  }
+}
+
+.hide-on-desktop {
+
+  @include desktop {
+    display: none !important;
+  }
+}
+
+picture {
+  display: block;
+  overflow: hidden;
+
+  img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+img {
+  border-radius: 30px;
+}
+
+.icon {
+  display: inline-block;
+  height: auto;
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.link:hover {
+  text-decoration-thickness: 1px !important;
+}

@@ -1,0 +1,5 @@
+.icon {
+
+  @include responsiveProperty('width', rem(29px), rem(29px), rem(29px), rem(43px));
+  height: auto;
+}

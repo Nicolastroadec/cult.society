@@ -1,0 +1,141 @@
+@use '../commons/vars' as vars;
+
+.block-timeline {
+    //  background-color: vars.$yellow;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .deco-haut-gauche {
+        position: absolute;
+        top: -120px;
+        left: 0px;
+        z-index: 0;
+        height: 200px;
+        width: auto;
+        transform: rotate(180deg);
+
+        @media (max-width: 780px) {
+            display: none;
+        }
+    }
+
+    h2 {
+        max-width: vars.$maxWidth;
+        margin: auto;
+        position: relative;
+
+
+
+        @media (max-width: 1440px) {
+            max-width: vars.$maxWidth1440;
+
+        }
+    }
+
+    .block {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: vars.$maxWidth;
+        margin: auto;
+        height: 200px;
+
+        @media (max-width: 1440px) {
+            max-width: vars.$maxWidth1440;
+            height: calc(200px*0.85);
+
+        }
+
+        .slider {
+            left: 0;
+            position: absolute;
+            overflow: hidden;
+            cursor: ew-resize;
+            height: 100%;
+            /* Curseur indiquant qu'on peut défiler horizontalement */
+
+            .cards {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                overflow-x: auto;
+                overflow-y: hidden;
+                scroll-behavior: smooth;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                cursor: grab;
+                /* Indique que l'élément est "attrapable" */
+                user-select: none;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: black;
+                    z-index: 100;
+                    left: 0;
+                    opacity: 0.1;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    transition: opacity 0.3s ease; // Ajoute la transition ici
+                    pointer-events: auto;
+                    visibility: visible;
+                }
+
+                &.scroll-enabled {
+                    &:before {
+                        transition: opacity 0.3s ease; // Ajoute la transition ici
+                        opacity: 0;
+                        pointer-events: none; // Empêche l’interaction
+                        visibility: hidden; // Cache visuellement l’élément sans couper l’animation
+                    }
+                }
+
+
+                .card {
+                    display: flex;
+                    margin-right: 20px;
+                    flex-direction: column;
+
+                    h3 {
+                        font-size: 30px;
+
+                        @media (max-width: 1440px) {
+                            font-size: calc(30px * 0.8);
+                        }
+                    }
+
+                    &.active {
+                        cursor: grabbing;
+                        /* Change le curseur pendant le glisser */
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    .desc {
+                        width: 400px;
+                    }
+
+                }
+
+                .right-arrow {
+                    position: relative;
+                    top: -25px;
+                    width: 100px;
+                    height: auto;
+                    margin-right: 45px;
+                }
+            }
+        }
+    }
+}

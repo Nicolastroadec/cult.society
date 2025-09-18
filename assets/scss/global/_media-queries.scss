@@ -1,0 +1,64 @@
+// ---
+// MOBILE FIRST !
+// ---
+
+// TODO22 : do we still use it in js too ?
+// /!\ ATTENTION /!\
+// 
+// If breakpoints are modified here,
+// the changes should be replicated in js `src/main/utils/device.js`
+// 
+
+$tabletPortrait : 1024px !default;
+$phablet : 1024px !default;
+$tablet : 1024px !default;
+$bigTablet : 1024px !default;
+$smallDesktop : 1280px !default;
+$desktop : 1920px !default; 
+
+@mixin mobile {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    @content;
+  }
+}
+@mixin tabletPortrait {
+  @media screen and (min-width: $tabletPortrait), print {
+    @content;
+  }
+}
+@mixin phablet {
+  @media screen and (min-width: $phablet), print {
+    @content;
+  }
+}
+@mixin maxTablet {
+  @media screen and (max-width: $tablet - 1px), print {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet), print {
+    @content;
+  }
+}
+@mixin tablet-only {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    @content;
+  }
+}
+@mixin bigTablet {
+  @media screen and (min-width: $bigTablet), print {
+    @content;
+  }
+}
+@mixin smallDesktop {
+  @media screen and (min-width: $smallDesktop) {
+    @content;
+  }
+}
+@mixin minDesktop {
+  @media screen and (min-width: 1920px) {
+    @content;
+  }
+}

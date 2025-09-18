@@ -1,0 +1,47 @@
+@use '../../commons/vars' as vars;
+
+.card-researcher {
+    height: 346px;
+    min-width: 246px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: vars.$beige;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid vars.$black;
+    padding-bottom: 30px;
+    position: relative;
+
+    &.active {
+        cursor: grabbing;
+        /* Change le curseur pendant le glisser */
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    h3 {
+        flex-wrap: wrap;
+        font-size: 18px !important;
+    }
+
+    img {
+        border-radius: 15px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .lien {
+        position: absolute;
+        bottom: 20px;
+
+        a {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    }
+}

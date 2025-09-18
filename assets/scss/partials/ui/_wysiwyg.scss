@@ -1,0 +1,52 @@
+.wysiwyg {
+
+  h2 {
+    @extend %typo-h2;
+    margin-bottom: rem(10px);
+    margin-top: rem(10px);
+
+    @include desktop {
+      margin-bottom: rem(8px);
+      margin-top: rem(8px);
+    }
+
+    &:first-child {
+      margin-top: rem(-13px);
+    }
+  }
+
+  a {
+    color: $black;
+  }
+
+  p {
+    @extend %typo-base;
+
+     a {
+      color: $black;
+    }
+  }
+
+  img, iframe, .wp-video {
+    width: 100% !important;
+    height: auto;
+    margin-top: rem(10px);
+    margin-bottom: rem(10px);
+    border-radius: rem(10px);
+    border:none;
+
+    @include desktop {
+      margin-top: rem(15px);
+      margin-bottom: rem(10px);
+    }
+  }
+
+  iframe, video {
+
+    @include desktop {
+      height: auto !important;
+      min-height: rem(312px);
+    }
+  }
+
+}
