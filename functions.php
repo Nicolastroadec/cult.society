@@ -8,7 +8,7 @@ if (! defined('_S_VERSION')) {
 /**
  * Enqueue scripts and styles.
  */
-function cland_scripts()
+/* function cland_scripts()
 {
 	wp_enqueue_style('cland-style', get_stylesheet_uri(), array(), _S_VERSION);
 	wp_style_add_data('cland-style', 'rtl', 'replace');
@@ -19,7 +19,7 @@ function cland_scripts()
 	}
 }
 add_action('wp_enqueue_scripts', 'cland_scripts');
-
+ */
 /**
  * Implement the Custom Header feature.
  */
@@ -48,50 +48,16 @@ if (defined('JETPACK__VERSION')) {
 }
 
 
-require_once get_template_directory() . '/functions/add-custom-class-to-blocks.php';
+// require_once get_template_directory() . '/functions/add-custom-class-to-blocks.php';
 require_once get_template_directory() . '/functions/enqueue-styles.php';
-require_once get_template_directory() . '/functions/register-blocks.php';
+//require_once get_template_directory() . '/functions/register-blocks.php';
 require_once get_template_directory() . '/functions/enqueue-admin-scripts.php';
 require_once get_template_directory() . '/functions/enqueue-scripts.php';
 require_once get_template_directory() . '/functions/enqueue-style-and-js-for-editor.php';
-require_once get_template_directory() . '/functions/dashboard-message.php';
+//require_once get_template_directory() . '/functions/dashboard-message.php';
 require_once get_template_directory() . '/functions/breadcrumb.php';
 require_once get_template_directory() . '/functions/disable-comments.php';
-require_once get_template_directory() . '/functions/reusable-blocks.php';
-
-add_action('admin_enqueue_scripts', function () {
-	//	wp_enqueue_style('mon-admin-style', get_template_directory_uri() . '/assets/css/admin.css', [], '1.0');
-});
-
-
-
-function redirect_single_post_to_home()
-{
-	if (is_singular('jobs')) {
-		wp_redirect(home_url());
-		exit;
-	}
-}
-add_action('template_redirect', 'redirect_single_post_to_home');
-
-
-function extraire_id_youtube($url)
-{
-	if (preg_match('/youtu\.be\/([^\?&]+)/', $url, $matches)) {
-		return $matches[1];
-	} elseif (preg_match('/youtube\.com\/watch\?v=([^\?&]+)/', $url, $matches)) {
-		return $matches[1];
-	} elseif (preg_match('/youtube\.com\/embed\/([^\?&]+)/', $url, $matches)) {
-		return $matches[1];
-	}
-	return null;
-}
-
-
-require_once get_template_directory() . '/functions/autoload-event-composition.php';
-
-
-
+//require_once get_template_directory() . '/functions/reusable-blocks.php';
 
 
 
@@ -99,3 +65,10 @@ require_once get_template_directory() . '/functions/autoload-event-composition.p
 // Cult.society :
 
 require_once get_template_directory() . '/functions/add-bulma-tags-menu-walker.php';
+
+
+add_action('init', function () {
+	if ($role = get_role('administrator')) {
+		$role->add_cap('edit_theme_options');
+	}
+});

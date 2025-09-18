@@ -89,3 +89,40 @@ class Bulma_Overlay_Menu_Walker extends Walker_Nav_Menu
         // Rien à fermer en plus
     }
 }
+
+
+class Bulma_Footer_Menu_Walker extends Walker_Nav_Menu
+{
+    public function start_lvl(&$output, $depth = 0, $args = null) {}
+    public function end_lvl(&$output, $depth = 0, $args = null) {}
+
+    public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
+    {
+        $classes = empty($item->classes) ? [] : (array) $item->classes;
+        $classes = array_filter(array_map('sanitize_html_class', $classes));
+
+        // On retrouve la signature visuelle du code source : "typo-base link"
+        $classes[] = 'typo-base';
+        $classes[] = 'link';
+
+        $link_classes = trim(implode(' ', array_unique($classes)));
+
+        $atts = [];
+        $atts['href']   = !empty($item->url) ? $item->url : '';
+        $atts['class']  = $link_classes;
+        $atts['title']  = !empty($item->attr_title) ? $item->attr_title : '';
+        $atts['target'] = !empty($item->target) ? $item->target : '';
+        $atts['rel']    = !empty($item->xfn) ? $item->xfn : '';
+
+        $attributes = '';
+        foreach ($atts as $attr => $value) {
+            if ($value !== '') {
+                $attributes .= ' ' . $attr . '="' . esc_attr($value) . '"';
+            }
+        }
+
+        $output .= '<a' . $attributes . '>' . esc_html($item->title) . '</a>';
+    }
+
+    public function end_el(&$output, $item, $depth = 0, $args = null) {}
+}
