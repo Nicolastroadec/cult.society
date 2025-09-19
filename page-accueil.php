@@ -84,6 +84,9 @@ get_header();
                                     <div class="event-date">
                                         <?php echo esc_html($start_obj->format('d/m/y')); ?>
                                     </div>
+                                    <a class="event-title-link" href="<?php echo esc_url($permalink); ?>">
+                                        <?php echo esc_html($title); ?>
+                                    </a>
                                     <?php if (! empty($term_links)) : ?>
                                         <div class="event-terms"><?php echo implode($term_links); ?></div>
                                     <?php endif; ?>
@@ -93,11 +96,7 @@ get_header();
                             <!-- Colonne 3 : titre + boutons -->
                             <div class="event-col col-right">
                                 <div class="event-titles">
-                                    <h3 class="event-title">
-                                        <a class="event-title-link" href="<?php echo esc_url($permalink); ?>">
-                                            <?php echo esc_html($title); ?>
-                                        </a>
-                                    </h3>
+                                    <?php the_excerpt() ?>
                                     <a class="btn btn-primary btn-read" href="<?php echo esc_url($permalink); ?>">
                                         Lire l’article
                                     </a>
