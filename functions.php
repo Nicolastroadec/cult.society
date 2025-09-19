@@ -72,3 +72,14 @@ add_action('init', function () {
 		$role->add_cap('edit_theme_options');
 	}
 });
+
+
+// 1) Le thème doit supporter les images mises en avant
+add_action('after_setup_theme', function () {
+	add_theme_support('post-thumbnails');
+});
+
+// 2) On s'assure que le post type TEC a bien le support 'thumbnail'
+add_action('init', function () {
+	add_post_type_support('tribe_events', 'thumbnail');
+}, 100);
