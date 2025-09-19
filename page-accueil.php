@@ -96,8 +96,9 @@ get_header();
                             <!-- Colonne 3 : titre + boutons -->
                             <div class="event-col col-right">
                                 <div class="event-titles">
-                                    <?php the_excerpt() ?>
-                                    <a class="btn btn-primary btn-read" href="<?php echo esc_url($permalink); ?>">
+                                    <p class="event-excerpt">
+                                        <?php echo esc_html(get_event_excerpt($event_id, 30)); ?>
+                                    </p> <a class="btn btn-primary btn-read" href="<?php echo esc_url($permalink); ?>">
                                         Lire l’article
                                     </a>
                                 </div>
@@ -121,3 +122,28 @@ get_header();
 </main>
 
 <?php get_footer(); ?>
+
+
+<?php
+// Utilitaire : extrait propre depuis un event (fallback sur le contenu)
+function get_event_excerpt($event_id, $words = 30)
+{
+    // 1) Extrait saisi manuellement (champ "Extrait")
+    $raw = get_the_excerpt($event_id);
+
+    // 2) Sinon, fabriquer depuis le contenu
+    if (empty($raw)) {
+        $content = get_post_field('post_content', $event_id);
+        // Nettoyage des blocs/shortcodes/HTML
+        if (function_exists('excerpt_remove_blocks')) {
+            $content = excerpt_remove_blocks($content);
+        }
+        $content = strip_shortcodes($content);
+        $content = wp_strip_all_tags($content);
+        $raw = $content;
+    }
+
+    // 3) Tronquer proprement
+    return wp_trim_words($raw, $words, '…');
+}
+?>
