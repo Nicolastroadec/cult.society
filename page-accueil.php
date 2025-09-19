@@ -97,7 +97,7 @@ get_header();
                             <div class="event-col col-right">
                                 <div class="event-titles">
                                     <p class="event-excerpt">
-                                        <?php echo esc_html(get_event_excerpt($event_id, 30)); ?>
+                                        <?php echo esc_html(get_event_excerpt($event_id, 15)); ?>
                                     </p> <a class="btn btn-primary btn-read" href="<?php echo esc_url($permalink); ?>">
                                         Lire l’article
                                     </a>
