@@ -126,7 +126,7 @@ get_header();
 
 <?php
 // Utilitaire : extrait propre depuis un event (fallback sur le contenu)
-function get_event_excerpt($event_id, $words = 30)
+function get_event_excerpt($event_id, $words = 15)
 {
     // 1) Extrait saisi manuellement (champ "Extrait")
     $raw = get_the_excerpt($event_id);
