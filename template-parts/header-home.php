@@ -7,10 +7,7 @@ $bouton_see_calls = get_field('bouton_see_calls');
 ?>
 
 <div class="header-home">
-    <div class="left-col">
-        <h1><?php the_title(); ?></h1>
-        <p class="slogan"><?= esc_html($slogan); ?></p>
-    </div>
+
 
     <div class="right-col">
         <div class="thumbnail">

@@ -373,6 +373,9 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
  */
 #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
   line-height: 1.6875rem;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
@@ -388,9 +391,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
     line-height: 3.25rem;
   }
-}
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
-  font-size: 1.5rem;
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
@@ -415,6 +415,7 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 .tag sub, .typo-h2 sup,
 .typo-h2 sub {
   font-size: calc(1.5rem * 0.75);
+  line-height: calc(1.5rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup,
@@ -448,15 +449,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
   .typo-h2 sub {
     font-size: calc(2.5rem * 0.75);
   }
-}
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup,
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formTitle sub,
-.search input[type=text] sub,
-.wysiwyg h2 sub,
-.tag sub, .typo-h2 sup,
-.typo-h2 sub {
-  line-height: calc(1.5rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup,
@@ -494,10 +486,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup, .typo-h2 sup {
   vertical-align: text-top;
 }
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
-  color: #000;
-  text-decoration: none;
-}
 #newsletterModal #formContainer_SowhDh05z519YGd .active.formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .active.formTitle, .search input.active[type=text], .wysiwyg h2.active, .active.tag, .typo-h2.active {
   text-decoration: underline;
 }
@@ -508,6 +496,9 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 .select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
 #newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
   font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #000;
+  text-decoration: none;
 }
 @media screen and (min-width: 1023px), print {
   .select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
@@ -537,6 +528,7 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 .wysiwyg p sub, .typo-base sup,
 .typo-base sub {
   font-size: calc(1.125rem * 0.75);
+  line-height: calc(1.125rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .select-container select sup, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sup, #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sup,
@@ -576,17 +568,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
   .typo-base sub {
     font-size: calc(1.8125rem * 0.75);
   }
-}
-.select-container select sup, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sup, #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sup,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel sup, .wysiwyg p sup,
-.select-container select sub,
-#newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel sub,
-.wysiwyg p sub, .typo-base sup,
-.typo-base sub {
-  line-height: calc(1.125rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .select-container select sup, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sup, #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sup,
@@ -631,10 +612,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 #newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel sup, .wysiwyg p sup, .typo-base sup {
   vertical-align: text-top;
 }
-.select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
-  line-height: 1.3125rem;
-}
 @media screen and (min-width: 1023px), print {
   .select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
   #newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
@@ -653,11 +630,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
     line-height: 2.0625rem;
   }
 }
-.select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
-  color: #000;
-  text-decoration: none;
-}
 .select-container select.active, #newsletterModal #formContainer_SowhDh05z519YGd input.active[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .active.formSelectionSingle,
 #newsletterModal #formContainer_SowhDh05z519YGd .active.formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .active.formTextLabel, .wysiwyg p.active, .typo-base.active {
   text-decoration: underline;
@@ -673,6 +645,9 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 
 .typo-small {
   font-size: 0.9375rem;
+  line-height: 1.3125rem;
+  color: #000;
+  text-decoration: none;
 }
 @media screen and (min-width: 1023px), print {
   .typo-small {
@@ -692,6 +667,7 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 .typo-small sup,
 .typo-small sub {
   font-size: calc(0.9375rem * 0.75);
+  line-height: calc(0.9375rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .typo-small sup,
@@ -710,10 +686,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
   .typo-small sub {
     font-size: calc(1.8125rem * 0.75);
   }
-}
-.typo-small sup,
-.typo-small sub {
-  line-height: calc(0.9375rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .typo-small sup,
@@ -736,9 +708,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
 .typo-small sup {
   vertical-align: text-top;
 }
-.typo-small {
-  line-height: 1.3125rem;
-}
 @media screen and (min-width: 1023px), print {
   .typo-small {
     line-height: 1.3125rem;
@@ -753,10 +722,6 @@ body, .typo-small, .select-container select, #newsletterModal #formContainer_Sow
   .typo-small {
     line-height: 2.0625rem;
   }
-}
-.typo-small {
-  color: #000;
-  text-decoration: none;
 }
 .typo-small.active {
   text-decoration: underline;
@@ -862,6 +827,9 @@ img {
  */
 #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
   line-height: 1.6875rem;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
@@ -877,9 +845,6 @@ img {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
     line-height: 3.25rem;
   }
-}
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
-  font-size: 1.5rem;
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
@@ -904,6 +869,7 @@ img {
 .tag sub, .typo-h2 sup,
 .typo-h2 sub {
   font-size: calc(1.5rem * 0.75);
+  line-height: calc(1.5rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup,
@@ -937,15 +903,6 @@ img {
   .typo-h2 sub {
     font-size: calc(2.5rem * 0.75);
   }
-}
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup,
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formTitle sub,
-.search input[type=text] sub,
-.wysiwyg h2 sub,
-.tag sub, .typo-h2 sup,
-.typo-h2 sub {
-  line-height: calc(1.5rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup,
@@ -983,10 +940,6 @@ img {
 #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle sup, .search input[type=text] sup, .wysiwyg h2 sup, .tag sup, .typo-h2 sup {
   vertical-align: text-top;
 }
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .formTitle, .search input[type=text], .wysiwyg h2, .tag, .typo-h2 {
-  color: #000;
-  text-decoration: none;
-}
 #newsletterModal #formContainer_SowhDh05z519YGd .active.formSubmit, #newsletterModal #formContainer_SowhDh05z519YGd .active.formTitle, .search input.active[type=text], .wysiwyg h2.active, .active.tag, .typo-h2.active {
   text-decoration: underline;
 }
@@ -997,6 +950,9 @@ img {
 .select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
 #newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
   font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #000;
+  text-decoration: none;
 }
 @media screen and (min-width: 1023px), print {
   .select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
@@ -1026,6 +982,7 @@ img {
 .wysiwyg p sub, .typo-base sup,
 .typo-base sub {
   font-size: calc(1.125rem * 0.75);
+  line-height: calc(1.125rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .select-container select sup, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sup, #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sup,
@@ -1065,17 +1022,6 @@ img {
   .typo-base sub {
     font-size: calc(1.8125rem * 0.75);
   }
-}
-.select-container select sup, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sup, #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sup,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel sup, .wysiwyg p sup,
-.select-container select sub,
-#newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage sub,
-#newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel sub,
-.wysiwyg p sub, .typo-base sup,
-.typo-base sub {
-  line-height: calc(1.125rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .select-container select sup, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text] sup, #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle sup,
@@ -1120,10 +1066,6 @@ img {
 #newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage sup, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel sup, .wysiwyg p sup, .typo-base sup {
   vertical-align: text-top;
 }
-.select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
-  line-height: 1.3125rem;
-}
 @media screen and (min-width: 1023px), print {
   .select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
   #newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
@@ -1142,11 +1084,6 @@ img {
     line-height: 2.0625rem;
   }
 }
-.select-container select, #newsletterModal #formContainer_SowhDh05z519YGd input[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .formSelectionSingle,
-#newsletterModal #formContainer_SowhDh05z519YGd .formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .formTextLabel, .wysiwyg p, .typo-base {
-  color: #000;
-  text-decoration: none;
-}
 .select-container select.active, #newsletterModal #formContainer_SowhDh05z519YGd input.active[type=text], #newsletterModal #formContainer_SowhDh05z519YGd .active.formSelectionSingle,
 #newsletterModal #formContainer_SowhDh05z519YGd .active.formErrorMessage, #newsletterModal #formContainer_SowhDh05z519YGd .active.formTextLabel, .wysiwyg p.active, .typo-base.active {
   text-decoration: underline;
@@ -1162,6 +1099,9 @@ img {
 
 .typo-small {
   font-size: 0.9375rem;
+  line-height: 1.3125rem;
+  color: #000;
+  text-decoration: none;
 }
 @media screen and (min-width: 1023px), print {
   .typo-small {
@@ -1181,6 +1121,7 @@ img {
 .typo-small sup,
 .typo-small sub {
   font-size: calc(0.9375rem * 0.75);
+  line-height: calc(0.9375rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .typo-small sup,
@@ -1199,10 +1140,6 @@ img {
   .typo-small sub {
     font-size: calc(1.8125rem * 0.75);
   }
-}
-.typo-small sup,
-.typo-small sub {
-  line-height: calc(0.9375rem * 0.75);
 }
 @media screen and (min-width: 1023px), print {
   .typo-small sup,
@@ -1225,9 +1162,6 @@ img {
 .typo-small sup {
   vertical-align: text-top;
 }
-.typo-small {
-  line-height: 1.3125rem;
-}
 @media screen and (min-width: 1023px), print {
   .typo-small {
     line-height: 1.3125rem;
@@ -1242,10 +1176,6 @@ img {
   .typo-small {
     line-height: 2.0625rem;
   }
-}
-.typo-small {
-  color: #000;
-  text-decoration: none;
 }
 .typo-small.active {
   text-decoration: underline;
@@ -2881,6 +2811,16 @@ em, i {
 
 .tag {
   height: 1.875rem;
+  text-decoration: none;
+  border: solid 0.0625rem black;
+  display: inline-block;
+  border-radius: 30px;
+  color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 400;
 }
 @media screen and (min-width: 1023px), print {
   .tag {
@@ -2896,18 +2836,6 @@ em, i {
   .tag {
     height: 3.25rem;
   }
-}
-.tag {
-  text-decoration: none;
-  border: solid 0.0625rem black;
-  display: inline-block;
-  border-radius: 30px;
-  color: black;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  font-weight: 400;
 }
 @media screen and (min-width: 1024px), print {
   .tag {
@@ -2961,6 +2889,7 @@ em, i {
 
 .icon {
   width: 1.8125rem;
+  height: auto;
 }
 @media screen and (min-width: 1023px), print {
   .icon {
@@ -2976,9 +2905,6 @@ em, i {
   .icon {
     width: 2.6875rem;
   }
-}
-.icon {
-  height: auto;
 }
 
 .socials {
@@ -3077,16 +3003,14 @@ em, i {
   width: 1000%;
   height: 1.4375rem;
   line-height: 1;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
 }
 @media screen and (min-width: 1920px) {
   .marquee div {
     height: 2.0625rem;
   }
-}
-.marquee div {
-  position: absolute;
-  overflow: hidden;
-  animation: marquee 20s linear infinite;
 }
 
 .marquee a, .marquee span {
@@ -3280,6 +3204,18 @@ em, i {
 }
 #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit {
   height: 1.875rem;
+  margin-top: 1.875rem;
+  text-decoration: none;
+  border: solid 0.0625rem black;
+  display: inline-block;
+  border-radius: 30px;
+  color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 400;
+  cursor: pointer;
 }
 @media screen and (min-width: 1023px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit {
@@ -3295,20 +3231,6 @@ em, i {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit {
     height: 3.25rem;
   }
-}
-#newsletterModal #formContainer_SowhDh05z519YGd .formSubmit {
-  margin-top: 1.875rem;
-  text-decoration: none;
-  border: solid 0.0625rem black;
-  display: inline-block;
-  border-radius: 30px;
-  color: black;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  font-weight: 400;
-  cursor: pointer;
 }
 @media screen and (min-width: 1024px), print {
   #newsletterModal #formContainer_SowhDh05z519YGd .formSubmit {
@@ -3350,6 +3272,18 @@ em, i {
 }
 .select-container select {
   height: 1.875rem;
+  -webkit-appearance: none;
+  text-decoration: none;
+  border: solid 0.0625rem black;
+  display: inline-block;
+  border-radius: 30px;
+  color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 400;
+  padding-left: 0.625rem;
 }
 @media screen and (min-width: 1023px), print {
   .select-container select {
@@ -3366,24 +3300,46 @@ em, i {
     height: 3.25rem;
   }
 }
-.select-container select {
-  -webkit-appearance: none;
-  text-decoration: none;
-  border: solid 0.0625rem black;
-  display: inline-block;
-  border-radius: 30px;
-  color: black;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  font-weight: 400;
-  padding-left: 0.625rem;
-}
 @media screen and (min-width: 1024px), print {
   .select-container select {
     border: solid 0.125rem black;
   }
+}
+
+.events-list .event-item {
+  display: flex;
+  gap: 2rem;
+}
+.events-list .event-item .col-left {
+  display: flex;
+  width: 50%;
+  gap: 1rem;
+}
+.events-list .event-item .col-left .event-col--media {
+  width: 70%;
+}
+.events-list .event-item .col-left .event-col--media .event-thumb img {
+  width: 100%;
+  height: auto;
+}
+.events-list .event-item .col-left .event-col--meta {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.events-list .event-item .col-left .event-col--meta .event-terms {
+  display: flex;
+  flex-direction: column;
+}
+.events-list .event-item .col-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.events-list .event-item .col-right .event-actions {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
