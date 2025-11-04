@@ -5,21 +5,7 @@ if (! defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
-/**
- * Enqueue scripts and styles.
- */
-/* function cland_scripts()
-{
-	wp_enqueue_style('cland-style', get_stylesheet_uri(), array(), _S_VERSION);
-	wp_style_add_data('cland-style', 'rtl', 'replace');
 
-
-	if (is_singular() && comments_open() && get_option('thread_comments')) {
-		wp_enqueue_script('comment-reply');
-	}
-}
-add_action('wp_enqueue_scripts', 'cland_scripts');
- */
 /**
  * Implement the Custom Header feature.
  */
@@ -48,16 +34,12 @@ if (defined('JETPACK__VERSION')) {
 }
 
 
-// require_once get_template_directory() . '/functions/add-custom-class-to-blocks.php';
 require_once get_template_directory() . '/functions/enqueue-styles.php';
-//require_once get_template_directory() . '/functions/register-blocks.php';
 require_once get_template_directory() . '/functions/enqueue-admin-scripts.php';
 require_once get_template_directory() . '/functions/enqueue-scripts.php';
 require_once get_template_directory() . '/functions/enqueue-style-and-js-for-editor.php';
-//require_once get_template_directory() . '/functions/dashboard-message.php';
 require_once get_template_directory() . '/functions/breadcrumb.php';
 require_once get_template_directory() . '/functions/disable-comments.php';
-//require_once get_template_directory() . '/functions/reusable-blocks.php';
 
 
 
@@ -65,7 +47,8 @@ require_once get_template_directory() . '/functions/disable-comments.php';
 // Cult.society :
 
 require_once get_template_directory() . '/functions/add-bulma-tags-menu-walker.php';
-
+require_once get_template_directory() . '/functions/get-event-excerpt.php';
+require_once get_template_directory() . '/functions/handle-favourites.php';
 
 add_action('init', function () {
 	if ($role = get_role('administrator')) {
