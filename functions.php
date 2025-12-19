@@ -35,10 +35,7 @@ if (defined('JETPACK__VERSION')) {
 
 
 require_once get_template_directory() . '/functions/enqueue-styles.php';
-require_once get_template_directory() . '/functions/enqueue-admin-scripts.php';
 require_once get_template_directory() . '/functions/enqueue-scripts.php';
-require_once get_template_directory() . '/functions/enqueue-style-and-js-for-editor.php';
-require_once get_template_directory() . '/functions/breadcrumb.php';
 require_once get_template_directory() . '/functions/disable-comments.php';
 
 
